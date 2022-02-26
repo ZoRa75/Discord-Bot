@@ -21,7 +21,7 @@ Client.on("messageCreate", message => {
         .setColor("0e13ff")
         .setTitle("Liste des commandes")
         .setAuthor("ZoRa")
-        .setDescription("- .info : Voir les actualités du pays !\n - .ping : en cours....")
+        .setDescription("- .info : Voir les actualités du pays !\n - .objectif : Voir les objectifs du pays !")
     
 
         message.channel.send({ embeds: [embed] });
@@ -35,6 +35,16 @@ Client.on("messageCreate", message => {
 
          message.channel.send({ embeds: [embed]});
     }
+
+    //.objectif
+     else if(message.content === prefix + "objectif"){
+        const embed = new Discord.MessageEmbed()
+        .setTitle("- Objectif:")
+        .setDescription("- Terminer le batiment principale !\n - Finir la route !\n - Avoir des panneaux solaires !")
+
+         message.channel.send({ embeds: [embed]});
+    }
+     
 });
 
 Client.on('message', message => {
