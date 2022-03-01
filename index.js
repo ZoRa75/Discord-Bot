@@ -10,6 +10,8 @@ const prefix = ".";
 
 Client.addListener("ready", () => {
     console.log("bot opérationnel");
+    Client.user.setActivity("Palaos meilleur pays de GAMMA");// WATCHING, LISTENING ou pas type mais url:lien twitch pour STREAMING  
+    Client.user.setStatus('online'); //dnd, invisible, online, idle
 });
 
 Client.on("messageCreate", message => {
