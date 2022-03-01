@@ -33,7 +33,7 @@ Client.on("messageCreate", message => {
     else if(message.content === prefix + "info"){
         const embed = new Discord.MessageEmbed()
         .setTitle("- Info:")
-        .setDescription("- Demain  un assaut aura lieu !\n - Le pays avance très bien !\n - **Ne pas violer les règles dites dans  #📢・annonces !**")
+        .setDescription("- Demain  un assaut aura lieu !\n - Le pays avance très bien !\n - **Ne pas violer les règles dites dans  #📢・annonces !\n - Banque: +10k**")
 
          message.channel.send({ embeds: [embed]});
     }
